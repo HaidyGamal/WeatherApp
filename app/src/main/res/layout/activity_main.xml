@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idRLHome"
+        android:visibility="visible"
+        android:background="@drawable/night">
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/idIVBack"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/rainy" />-->
+
+        <TextView
+            android:id="@+id/idTVCityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Cairo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Friday,29Oct 2022"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/idLLEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTVCityName"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTILCity"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:layout_weight="4.5"
+                android:background="@android:color/transparent"
+                android:hint="Enter City Name"
+                android:padding="5dp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/idIVSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_search"
+                app:tint="@color/white" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button"-->
+<!--                ico-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                app:icon="@drawable/ic_search"-->
+<!--                app:iconTint="@color/black" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/idTVTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="29°"
+            android:textColor="@color/white"
+            android:textSize="78dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/Icon1"
+            android:layout_width="116dp"
+            android:layout_height="71dp"
+            android:layout_above="@+id/idLLEdt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="-163dp"
+            android:src="@drawable/cloud"
+             />
+
+        <TextView
+            android:id="@+id/idTVCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:text="Sunny"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/Icon3"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/idLLEdt"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="-386dp"
+            android:src="@drawable/wb_sunny"
+            app:tint="@color/yellow" />
+
+        <ImageView
+            android:id="@+id/Icon4"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/idLLEdt"
+            android:layout_marginStart="285dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="-385dp"
+            android:src="@drawable/wb_sunny"
+            app:tint="@color/yellow" />
+
+        <ImageView
+            android:id="@+id/Icon2"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/idLLEdt"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="-386dp"
+            android:src="@drawable/cloud"
+             />
+
+        <TextView
+            android:id="@+id/TVTodayDg"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/Icon2"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="29°"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVToday"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/TVTodayDg"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Today"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVTomorrowDg"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/Icon2"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="27°"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVTomorrow"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/TVTodayDg"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Tomorrow"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVATomDg"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/Icon2"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="27°"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVATomorrow"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/TVTodayDg"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Sunday"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
